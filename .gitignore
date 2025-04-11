@@ -1,5 +1,5 @@
 .venv/
 .idea/
 .ipynb_checkpoints/
-.tmp_trainer/
+**/tmp_trainer/
 .env

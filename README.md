@@ -1,9 +1,7 @@
-### embed_ua_base
+### xlm-roberta-ua-distilled 🇺🇦🇬🇧
 
-### notes
+Check out the model card on [HF](https://huggingface.co/panalexeu/xlm-roberta-ua-distilled) 📄 — learn more about how it was built and what it can do.
 
-* before starting jupyter make sure that the command below was executed: 
+Also, try the model in action directly via the interactive demo on [HF Spaces](https://huggingface.co/spaces/panalexeu/xlm-roberta-ua-distilled) ⚙️🧪  
+No setup required — test its capabilities right in your browser! 💻✨
 
-```bash
-export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-```

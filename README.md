@@ -8,7 +8,7 @@ No setup required — test its capabilities right in your browser! 💻✨
 ![Playground](./pics/playground.png)
 
 
-#### Training Approach
+### Training Approach
 
 To train the model, the approach proposed by Nils Reimers and Iryna Gurevych in the following research [paper](https://arxiv.org/pdf/2004.09813) was used.
 

@@ -1,4 +1,4 @@
-### xlm-roberta-ua-distilled 🇺🇦🇬🇧
+## xlm-roberta-ua-distilled 🇺🇦🇬🇧
 
 Check out the model card on [HF](https://huggingface.co/panalexeu/xlm-roberta-ua-distilled) 📄 — learn more about how it was built and what it can do.
 
@@ -8,7 +8,7 @@ No setup required — test its capabilities right in your browser! 💻✨
 ![Playground](./pics/playground.png)
 
 
-#### Training approach 
+### Training approach 
 
 To train the model, approach proposed by Nils Reimers and Iryna Gurevych  in the following research [paper](https://arxiv.org/pdf/2004.09813) was used.
 
@@ -23,7 +23,7 @@ This way the proposed approach not only distills knowledge from teacher model to
 This results in increase of model performance across several training languages and cross lingual transfer. 
 
 
-#### Benchmarks
+### Benchmarks
 
 To see the process of benchmarking, check out the following [notebook](./researches/benchmarks.ipynb).
 

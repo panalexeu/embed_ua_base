@@ -2,8 +2,8 @@
 
 Check out the model card on [HF](https://huggingface.co/panalexeu/xlm-roberta-ua-distilled) 📄 — learn more about how it was built and what it can do.
 
-Also, try the model in action directly via the interactive demo on [HF Spaces](https://huggingface.co/spaces/panalexeu/xlm-roberta-ua-distilled) ⚙️🧪
-No setup required — test its capabilities right in your browser! 💻✨
+Also, try the model in action directly via the interactive demo on [HF Spaces](https://huggingface.co/spaces/panalexeu/xlm-roberta-ua-distilled) 🧪
+No setup required — test its capabilities right in your browser! 💻
 
 ![Playground](./pics/playground.png)
 
@@ -22,10 +22,23 @@ In this way, the proposed approach not only distills knowledge from the teacher 
 
 This results in improved model performance across several training languages and better cross-lingual transfer.
 
-You can check out the training process in the followin [notebook]
+[SentenceTransformers](https://sbert.net/) library provides ready-to-use tools to implement the training process described above.
+
+You can check out the training process in more detail in the following [notebook](./researchers/research_final.ipynb). 
+
+The training was performed on the following parallel sentence datasets, specifically on the `en-uk` subsets:
+
+* [parallel-sentences-talks](https://huggingface.co/datasets/sentence-transformers/parallel-sentences-talks);
+* [parallel-sentences-wikimatrix](https://huggingface.co/datasets/sentence-transformers/parallel-sentences-wikimatrix);
+* [parallel-sentences-tatoeba](https://huggingface.co/datasets/sentence-transformers/parallel-sentences-tatoeba);
+
+The combined training dataset resulted in more than 500,000 sentence pairs. 
+
+The training was performed for 4 epochs with a batch size of 48. The training hardware used was a GPU P100 with 16 GB of memory provided by [Kaggle](https://www.kaggle.com/). On the GPU P100, training took more than 8 hours.
 
 ### Benchmarks
 
-To see the process of benchmarking, check out the following [notebook](./researches/benchmarks.ipynb).
+For evaluation and benchmarking, the [sts17-crosslingual-sts](https://huggingface.co/datasets/mteb/sts17-crosslingual-sts) (semantic textual similarity) dataset was used. It consists of multilingual sentence pairs and a similarity score from 0 to 5 annotated by humans. However, the `sts17-crosslingual-sts` dataset does not provide sentence pairs for the Ukrainian language, so they were machine-translated using `gpt-4o`, resulting in `en-en`, `en-ua`, and `ua-ua` evaluation subsets. You can check out the translation process in more detail in the following [notebook](./researches/dataset_translation.ipynb). 
 
-work in progress ...
+To see the benchmarking process in more detail, check out the following [notebook](./researches/benchmarks.ipynb).
+

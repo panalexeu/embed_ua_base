@@ -17,10 +17,6 @@ Below is the performance of the models measured on [sts17-crosslingual-sts](http
 | XLM-RoBERTa                          | 52.2  | 13.5     | 41.5     |
 | xlm-roberta-ua-distilled*            | 73.1  | **62.0** | **64.5** |
 
-Below is provided MTEB evaluation results ... 
-
-...
-
 For evaluation and benchmarking, the [sts17-crosslingual-sts](https://huggingface.co/datasets/mteb/sts17-crosslingual-sts) (semantic textual similarity) dataset was used. It consists of multilingual sentence pairs and a similarity score from 0 to 5 annotated by humans. However, the `sts17-crosslingual-sts` dataset does not provide sentence pairs for the Ukrainian language, so they were machine-translated using `gpt-4o`, resulting in `en-en`, `en-ua`, and `ua-ua` evaluation subsets. You can check out the translation process in more detail in the following [notebook](./researches/dataset_translation.ipynb). 
 
 To see the benchmarking process in more detail, check out the following [notebook](./researches/benchmarks.ipynb).

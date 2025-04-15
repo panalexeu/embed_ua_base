@@ -24,7 +24,9 @@ This results in improved model performance across several training languages and
 
 [SentenceTransformers](https://sbert.net/) library provides ready-to-use tools to implement the training process described above.
 
-You can check out the training process in more detail in the following [notebook](./researches/research_final.ipynb). 
+The teacher model chosen was [multi-qa-mpnet-base-dot-v1](https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-dot-v1). This model is monolingual (English) and achieves great performance on semantic search tasks (which is well-suited for RAG), based on the benchmarks provided [here](https://sbert.net/docs/sentence_transformer/pretrained_models.html).
+
+The student model chosen was [XLM-RoBERTa](https://huggingface.co/FacebookAI/xlm-roberta-base). This model is a multilingual version of RoBERTa, trained on CommonCrawl data covering 100 languages.
 
 The training was performed on the following parallel sentence datasets, specifically on the `en-uk` subsets:
 
@@ -34,7 +36,9 @@ The training was performed on the following parallel sentence datasets, specific
 
 The combined training dataset resulted in more than 500,000 sentence pairs. 
 
-The training was performed for 4 epochs with a batch size of 48. The training hardware used was a GPU P100 with 16 GB of memory provided by [Kaggle](https://www.kaggle.com/). On the GPU P100, training took more than 8 hours.
+The training was performed for 4 epochs with a batch size of 48. The training hardware was a GPU P100 with 16 GB of memory provided by [Kaggle](https://www.kaggle.com/). On the GPU P100, training took more than 8 hours.
+
+You can check out the training process in more detail in the following [notebook](./researches/research_final.ipynb). 
 
 ### Benchmarks
 

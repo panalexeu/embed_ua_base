@@ -24,7 +24,7 @@ This results in improved model performance across several training languages and
 
 [SentenceTransformers](https://sbert.net/) library provides ready-to-use tools to implement the training process described above.
 
-You can check out the training process in more detail in the following [notebook](./researchers/research_final.ipynb). 
+You can check out the training process in more detail in the following [notebook](./researches/research_final.ipynb). 
 
 The training was performed on the following parallel sentence datasets, specifically on the `en-uk` subsets:
 

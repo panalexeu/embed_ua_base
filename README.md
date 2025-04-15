@@ -20,33 +20,6 @@ For evaluation and benchmarking, the [sts17-crosslingual-sts](https://huggingfac
 
 To see the benchmarking process in more detail, check out the following [notebook](./researches/benchmarks.ipynb).
 
-### Usage Example 
-
-```python
-from sentence_transformers import SentenceTransformer
-
-model = SentenceTransformer('panalexeu/xlm-roberta-ua-distilled')
-
-sentences = [
-    'I love coffee!',
-    'Я люблю каву!',
-    'C is a compiled programming language known for its speed and low-level memory access.',  
-    'Python — це інтерпретована мова програмування, що цінується за простоту та читабельність.'
-]
-
-embeds = model.encode(sentences)
-embeds.shape
-#( 4, 768)
-
-model.similarity(embeds, embeds)
-# tensor([[1.0000, 0.9907, 0.3557, 0.3706],
-#        [0.9907, 1.0000, 0.3653, 0.3757],
-#        [0.3557, 0.3653, 1.0000, 0.7821],
-#        [0.3706, 0.3757, 0.7821, 1.0000]])
-```
-
-A usage example is also provided as a [notebook](./researches/usage_example.ipynb).
-
 ### Training Approach
 
 To train the model, the approach proposed by Nils Reimers and Iryna Gurevych in the following [research paper](https://arxiv.org/pdf/2004.09813) was used.
@@ -78,3 +51,30 @@ The combined training dataset resulted in more than 500,000 sentence pairs.
 The training was performed for 4 epochs with a batch size of 48. The training hardware was a GPU P100 with 16 GB of memory provided by [Kaggle](https://www.kaggle.com/). On the GPU P100, training took more than 8 hours.
 
 You can check out the training process in more detail in the following [notebook](./researches/research_final.ipynb). 
+
+### Usage Example 
+
+```python
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer('panalexeu/xlm-roberta-ua-distilled')
+
+sentences = [
+    'I love coffee!',
+    'Я люблю каву!',
+    'C is a compiled programming language known for its speed and low-level memory access.',  
+    'Python — це інтерпретована мова програмування, що цінується за простоту та читабельність.'
+]
+
+embeds = model.encode(sentences)
+embeds.shape
+#( 4, 768)
+
+model.similarity(embeds, embeds)
+# tensor([[1.0000, 0.9907, 0.3557, 0.3706],
+#        [0.9907, 1.0000, 0.3653, 0.3757],
+#        [0.3557, 0.3653, 1.0000, 0.7821],
+#        [0.3706, 0.3757, 0.7821, 1.0000]])
+```
+
+A usage example is also provided as a [notebook](./researches/usage_example.ipynb).

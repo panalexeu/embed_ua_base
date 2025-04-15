@@ -1,7 +1,6 @@
 ## xlm-roberta-ua-distilled 🇺🇦🇬🇧
 
-Check out the model card on [HF](https://huggingface.co/panalexeu/xlm-roberta-ua-distilled) 📄 — learn more about how it was built and what it can do.
-
+Check out the model card on [HF](https://huggingface.co/panalexeu/xlm-roberta-ua-distilled) 📄
 Also, try the model in action directly via the interactive demo on [HF Spaces](https://huggingface.co/spaces/panalexeu/xlm-roberta-ua-distilled) 🧪
 No setup required — test its capabilities right in your browser! 💻
 
@@ -20,6 +19,33 @@ Below is the performance of the models measured on [sts17-crosslingual-sts](http
 For evaluation and benchmarking, the [sts17-crosslingual-sts](https://huggingface.co/datasets/mteb/sts17-crosslingual-sts) (semantic textual similarity) dataset was used. It consists of multilingual sentence pairs and a similarity score from 0 to 5 annotated by humans. However, the `sts17-crosslingual-sts` dataset does not provide sentence pairs for the Ukrainian language, so they were machine-translated using `gpt-4o`, resulting in `en-en`, `en-ua`, and `ua-ua` evaluation subsets. You can check out the translation process in more detail in the following [notebook](./researches/dataset_translation.ipynb). 
 
 To see the benchmarking process in more detail, check out the following [notebook](./researches/benchmarks.ipynb).
+
+### Usage Example 
+
+```python
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer('panalexeu/xlm-roberta-ua-distilled')
+
+sentences = [
+    'I love coffee!',
+    'Я люблю каву!',
+    'C is a compiled programming language known for its speed and low-level memory access.',  
+    'Python — це інтерпретована мова програмування, що цінується за простоту та читабельність.'
+]
+
+embeds = model.encode(sentences)
+embeds.shape
+#( 4, 768)
+
+model.similarity(embeds, embeds)
+# tensor([[1.0000, 0.9907, 0.3557, 0.3706],
+#        [0.9907, 1.0000, 0.3653, 0.3757],
+#        [0.3557, 0.3653, 1.0000, 0.7821],
+#        [0.3706, 0.3757, 0.7821, 1.0000]])
+```
+
+A usage example is also provided as a [notebook](./researches/usage_example.ipynb).
 
 ### Training Approach
 

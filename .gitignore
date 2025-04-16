@@ -1,6 +1,6 @@
 .venv/
 .idea/
 .ipynb_checkpoints/
-**/results/
+researches/results/
 **/tmp_trainer/
 .env

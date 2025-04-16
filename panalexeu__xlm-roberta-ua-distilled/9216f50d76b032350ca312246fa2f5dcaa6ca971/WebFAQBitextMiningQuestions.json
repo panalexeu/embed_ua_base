@@ -1,7 +1,7 @@
 {
   "dataset_revision": "a1bc0e8fd36c3d5015bd64c14ca098596774784a",
   "task_name": "WebFAQBitextMiningQuestions",
-  "mteb_version": "1.36.40",
+  "mteb_version": "1.36.41",
   "scores": {
     "default": [
       {
@@ -114,6 +114,6 @@
       }
     ]
   },
-  "evaluation_time": 76.25748419761658,
+  "evaluation_time": 74.93656182289124,
   "kg_co2_emissions": null
 }

@@ -1,7 +1,7 @@
 {
   "dataset_revision": "a74d7350ea12af010cfb1c21e34f1f81fd2e615b",
   "task_name": "SIB200Classification",
-  "mteb_version": "1.36.40",
+  "mteb_version": "1.36.41",
   "scores": {
     "train": [
       {
@@ -196,6 +196,6 @@
       }
     ]
   },
-  "evaluation_time": 17.14798402786255,
+  "evaluation_time": 17.802814483642578,
   "kg_co2_emissions": null
 }

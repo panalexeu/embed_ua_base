@@ -1,7 +1,7 @@
 {
   "dataset_revision": "671d1e6bbf45a74ef21af351fd4ef7b32b7856f8",
   "task_name": "UkrFormalityClassification",
-  "mteb_version": "1.36.40",
+  "mteb_version": "1.36.41",
   "scores": {
     "train": [
       {
@@ -176,6 +176,6 @@
       }
     ]
   },
-  "evaluation_time": 9.464348793029785,
+  "evaluation_time": 9.7456955909729,
   "kg_co2_emissions": null
 }

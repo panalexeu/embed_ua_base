@@ -1,7 +1,7 @@
 {
   "dataset_revision": "ed9a4403ed4adbfaf4aab56d5b2709e9f6c3ba33",
   "task_name": "NTREXBitextMining",
-  "mteb_version": "1.36.40",
+  "mteb_version": "1.36.41",
   "scores": {
     "test": [
       {
@@ -318,6 +318,6 @@
       }
     ]
   },
-  "evaluation_time": 88.55686783790588,
+  "evaluation_time": 87.85017442703247,
   "kg_co2_emissions": null
 }

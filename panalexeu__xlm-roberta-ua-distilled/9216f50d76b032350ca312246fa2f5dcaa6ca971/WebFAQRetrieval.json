@@ -1,7 +1,7 @@
 {
   "dataset_revision": "c3262adb1c32ac0c3ea8de6393a44366edaa62e1",
   "task_name": "WebFAQRetrieval",
-  "mteb_version": "1.36.40",
+  "mteb_version": "1.36.41",
   "scores": {
     "test": [
       {
@@ -153,6 +153,6 @@
       }
     ]
   },
-  "evaluation_time": 470.8433382511139,
+  "evaluation_time": 474.20385456085205,
   "kg_co2_emissions": null
 }

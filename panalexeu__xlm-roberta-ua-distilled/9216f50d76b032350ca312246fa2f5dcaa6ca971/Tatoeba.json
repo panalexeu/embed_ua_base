@@ -1,7 +1,7 @@
 {
   "dataset_revision": "69e8f12da6e31d59addadda9a9c8a2e601a0e282",
   "task_name": "Tatoeba",
-  "mteb_version": "1.36.40",
+  "mteb_version": "1.36.41",
   "scores": {
     "test": [
       {
@@ -18,6 +18,6 @@
       }
     ]
   },
-  "evaluation_time": 1.9586408138275146,
+  "evaluation_time": 1.9347705841064453,
   "kg_co2_emissions": null
 }

@@ -1,7 +1,7 @@
 {
   "dataset_revision": "e6b647fcb6299a2f686f742f4d4c023e553ea67e",
   "task_name": "FloresBitextMining",
-  "mteb_version": "1.36.40",
+  "mteb_version": "1.36.41",
   "scores": {
     "devtest": [
       {
@@ -4878,6 +4878,6 @@
       }
     ]
   },
-  "evaluation_time": 757.827787399292,
+  "evaluation_time": 752.6092479228973,
   "kg_co2_emissions": null
 }

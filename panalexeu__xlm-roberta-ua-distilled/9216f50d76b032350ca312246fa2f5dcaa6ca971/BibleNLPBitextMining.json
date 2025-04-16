@@ -1,7 +1,7 @@
 {
   "dataset_revision": "264a18480c529d9e922483839b4b9758e690b762",
   "task_name": "BibleNLPBitextMining",
-  "mteb_version": "1.36.40",
+  "mteb_version": "1.36.41",
   "scores": {
     "train": [
       {
@@ -30,6 +30,6 @@
       }
     ]
   },
-  "evaluation_time": 2.9841997623443604,
+  "evaluation_time": 2.9033315181732178,
   "kg_co2_emissions": null
 }

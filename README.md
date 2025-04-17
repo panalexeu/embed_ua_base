@@ -8,7 +8,7 @@ Also, try the model in action directly via the interactive demo on [HF Spaces](h
 
 ### MTEB 
 
-The model achieves a rank of 43 on the [MTEB leaderboard](https://huggingface.co/spaces/mteb/leaderboard) for the Ukrainian language and ranks higher than [text-embedding-3-small](https://openai.com/index/new-embedding-models-and-api-updates/) by OpenAI, which is ranked 45th.
+As of April 17, 2025, the model achieves a rank of 43 on the [MTEB leaderboard](https://huggingface.co/spaces/mteb/leaderboard) for the Ukrainian language and ranks higher than [text-embedding-3-small](https://openai.com/index/new-embedding-models-and-api-updates/) by OpenAI, which is ranked 45th.
 
 ![MTEB](./pics/mteb_rank.png)
 

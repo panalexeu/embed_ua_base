@@ -6,12 +6,18 @@ Also, try the model in action directly via the interactive demo on [HF Spaces](h
 
 ![Playground](./pics/playground.png)
 
+### MTEB 
+
+The model achieves a rank of 43 on the [MTEB leaderboard](https://huggingface.co/spaces/mteb/leaderboard) for the Ukrainian language and ranks higher than [text-embedding-3-small](https://openai.com/index/new-embedding-models-and-api-updates/) by OpenAI, which is ranked 45th.
+
+![MTEB](./pics/mteb_rank.png)
+
 ### Benchmarks
 
 Below is the performance of the models measured on [sts17-crosslingual-sts](https://huggingface.co/datasets/mteb/sts17-crosslingual-sts), using Spearman correlation between the predicted similarity scores and the gold scores.
 
 | model                                | en-en | en-ua    | ua-ua    | 
-| ------------------------------------ | ----- | -------- | -------- |  
+| ------------------------------------ | ----- | -------- | -------- |
 | multi-qa-mpnet-base-dot-v1           | 75.8  | 12.9     | 62.3     |
 | XLM-RoBERTa                          | 52.2  | 13.5     | 41.5     |
 | xlm-roberta-ua-distilled*            | 73.1  | **62.0** | **64.5** |
